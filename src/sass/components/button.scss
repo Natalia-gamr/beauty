@@ -1,0 +1,25 @@
+.button {
+    margin: 0;
+    padding: 12px 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid;
+    border-radius: 40px;
+    cursor: pointer;
+    &_white {
+        color: black;
+        background-color: white;
+        border-color: $accent;
+    }
+    &_green {
+        color: white;
+        background-color: $accent;
+    }
+    &_white-border {
+        color: white;
+        background-color: $accent;
+        border-color: white; 
+    }
+}
+
