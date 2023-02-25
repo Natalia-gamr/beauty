@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интернет-магазин оборудования для салонов красоты">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>BEAUTY</title>
 </head>
 <body>
     <header class="header">
@@ -17,12 +18,12 @@
             <a href="#" class="header__list_item">Контакты</a>
         </nav>
         <div class="header__main">
-            <div class="header__logo">
+            <a href='#' class="header__logo">
                 <img src="icons/logo.svg" alt="logo">
                 <h1>BEAUTY</h1>
-            </div>
+            </a>
             <div class="header__number">
-               <div>8 (812) 123-45-67</div>
+                <a href="tel:88121234567">8 (812) 123-45-67</a>
                 <button class="button button_white" id="openModal" onclick="openModal()">Обратный звонок</button>  
             </div>
             
@@ -80,24 +81,25 @@
                     </div>
                 </div>
             </div>
-            
-                <div class="feedback">
-                    <div class="feedback__item">
-                        <form class="feedback__content" type="submit">
-                            <p class="feedback__title">Получайте бонусы и подарки</p>
-                            <p class="feedback__descr">Каждый месяц разыгрываем 10&nbsp;000 рублей для наших клиентов</p> 
-                            <input type="email" placeholder="Введите e-mail">
+            <div class="subscription">
+                <div class="subscription__item">
+                    <div class="subscription__content">
+                        <p class="subscription__title">Получайте бонусы и подарки</p>
+                        <p class="subscription__descr">Каждый месяц разыгрываем 10&nbsp;000 рублей для наших клиентов</p> 
+                        <form id="subscribe" class="subscription__form">
+                            <input type="email" placeholder="Введите e-mail" id="mail" value="">
+                            <button class="subscription__button button button_green" type="submit" onclick="subscribe()">&#10004;</button>
                         </form>
-                        <div>
-                            <img src="icons/mail.svg" alt="mail">
-                        </div>
                     </div>
-                    <div class="feedback__item">
-                        <p class="feedback__title">Заходите к нам</p>
-                        <p class="feedback__descr feedback__descr_sm">Более 300 магазинов по всей России</p>
-                        <button class="button button_white-border">Карта магазинов</button>
-                    </div>                    
-                
+                    <div>
+                        <img src="icons/mail.svg" alt="mail">
+                    </div>
+                </div>
+                <div class="subscription__item">
+                    <p class="subscription__title">Заходите к нам</p>
+                    <p class="subscription__descr subscription__descr_sm">Более 300 магазинов по всей России</p>
+                    <button class="button button_white-border">Карта магазинов</button>
+                </div>                    
             </div>
         </div>
     </div>  
@@ -112,7 +114,7 @@
                     </div>
                     <div>198555, Невский пр. 140, офис 140</div>
                     <div  class="footer__phone">
-                        <div>8 (812) 123-45-67</div>
+                        <a href="#">8 (812) 123-45-67</a>
                         <div>
                             <button class="button button_white" id="openModal" onclick="openModal()">Обратный звонок</button>
                         </div>
@@ -128,16 +130,16 @@
                 
     </div>  
     <div class="modal">
-        <form action="submit" class="modal__form">
+        <form class="modal__form">
             <p class="modal__title">Обратный звонок</p>
             <img src="icons/x-square.svg" alt="" class="modal__close" onclick="closeModal()">
             <label for="tel" class="modal__label">Ваш телефон*
-                <input type="tel" name="tel" class="modal__input">
+                <input type="tel" id="tel" class="modal__input" value="">
             </label>
             <label for="message" class="modal__label">Ваше сообщение
-                <textarea type="text" name="message" class="modal__input">
+                <input type="text" id="message" class="modal__input" value="">
             </label>
-            <button class="button button_green">Отправить</button>
+            <button class="button button_green" id="submit" type="submit" onclick="submitModal()">Отправить</button>
         </form>
     </div>
     <script src="js/script.js"></script> 
