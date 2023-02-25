@@ -1,11 +1,11 @@
-$(document).ready(function(){
-    $('.main__gallery_items').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-    
-    
- });
+
+let modal = document.querySelector('.modal');
+
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+function openModal() {
+    modal.style.display = 'flex';
+}
       

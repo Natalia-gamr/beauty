@@ -1,0 +1,45 @@
+.feedback {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            padding: 35px 40px;
+            color: white;
+            width: 540px;
+            background-color: $accent;
+            &:first-child {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 25px;
+        }
+        &__descr {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 25px;
+            margin-right: 10px;
+            &_sm {
+                max-width: 150px;
+            }
+        }
+        &__content {
+            max-width: 250px;
+            input {
+                border-radius: 30px;
+                width: 100%;
+                padding: 10px 20px;
+                border: none;
+            }
+            ::placeholder {
+                color: #C4C4C4;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
