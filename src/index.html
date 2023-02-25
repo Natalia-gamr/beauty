@@ -42,7 +42,7 @@
     </header>
     <div class="promo">
         <div class="promo__heading">
-            <h2 class="promo__title">Супер кресло</h2>
+            <h2>Супер кресло</h2>
             <div class="promo__descr">Текст акции всегда отражает суть, а не просто болтовню, поэтому внимательнее</div>
             <button class="button button_white-border">Подробнее</button>
         </div> 
@@ -54,37 +54,47 @@
                     <h3>Специальные предложения</h3>
                     <img src="icons/auto.svg" alt="">
                 </div>
-                <div class="main__list">
-                    <div class="main__item">
+                <div class="slider">
+                    <div class="slider__item">
                         <img src="img/chairItem.png" alt="">
-                        <p class="main__descr">Парикмахерское кресло «Норм» гидравлическое</p>
-                        <p class="main__price">9 900 ₽ </p>
-                        <button class="button button_green">Купить</button>
+                        <div>
+                            <p class="slider__descr">Парикмахерское кресло «Норм» гидравлическое</p>
+                            <p class="slider__price">9 900 ₽ </p>
+                            <button class="button button_green">Купить</button>
+                        </div>
                     </div>
-                    <div class="main__item">
+                    <div class="slider__item">
                         <img src="img/chairItem.png" alt="">
-                        <p class="main__descr">Парикмахерское кресло «Норм» гидравлическое</p>
-                        <p class="main__price">9 900 ₽ </p>
-                        <button class="button button_green">Купить</button>
+                        <div>
+                            <p class="slider__descr">Парикмахерское кресло «Норм» гидравлическое</p>
+                            <p class="slider__price">9 900 ₽ </p>
+                            <button class="button button_green">Купить</button>
+                        </div>
                     </div>
-                    <div class="main__item">
+                    <div class="slider__item">
                         <img src="img/chairItem.png" alt="">
-                        <p class="main__descr">Парикмахерское кресло «Норм» гидравлическое</p>
-                        <p class="main__price">9 900 ₽ </p>
-                        <button class="button button_green">Купить</button>
+                        <div>
+                            <p class="slider__descr">Парикмахерское кресло «Норм» гидравлическое</p>
+                            <p class="slider__price">9 900 ₽ </p>
+                            <button class="button button_green">Купить</button>
+                        </div>
                     </div>
-                    <div class="main__item">
+                    <div class="slider__item">
                         <img src="img/chairItem.png" alt="">
-                        <p class="main__descr">Парикмахерское кресло «Норм» гидравлическое</p>
-                        <p class="main__price">9 900 ₽ </p>
-                        <button class="button button_green">Купить</button>
+                        <div>
+                            <p class="slider__descr">Парикмахерское кресло «Норм» гидравлическое</p>
+                            <p class="slider__price">9 900 ₽ </p>
+                            <button class="button button_green">Купить</button>
+                        </div>
                     </div>
                 </div>
+                <button class="slider__left">&lt;</button>
+                <button class="slider__right">&gt;</button>
             </div>
             <div class="subscription">
                 <div class="subscription__item">
                     <div class="subscription__content">
-                        <p class="subscription__title">Получайте бонусы и подарки</p>
+                        <h3 class="subscription__title">Получайте бонусы и подарки</h3>
                         <p class="subscription__descr">Каждый месяц разыгрываем 10&nbsp;000 рублей для наших клиентов</p> 
                         <form id="subscribe" class="subscription__form">
                             <input type="email" placeholder="Введите e-mail" id="mail" value="">
@@ -96,7 +106,7 @@
                     </div>
                 </div>
                 <div class="subscription__item">
-                    <p class="subscription__title">Заходите к нам</p>
+                    <h3 class="subscription__title">Заходите к нам</h3>
                     <p class="subscription__descr subscription__descr_sm">Более 300 магазинов по всей России</p>
                     <button class="button button_white-border">Карта магазинов</button>
                 </div>                    
@@ -143,5 +153,6 @@
         </form>
     </div>
     <script src="js/script.js"></script> 
+    <script src="js/slider.js"></script> 
 </body>
 </html>

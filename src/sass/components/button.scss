@@ -40,3 +40,15 @@
     }
 }
 
+@media (max-width: 800px) {
+    .button {
+        padding: 8px;
+        font-size: 12px;
+        line-height: 14px;
+        width: 140px;
+        &_green {
+            width: 110px;
+        }
+    }
+}
+

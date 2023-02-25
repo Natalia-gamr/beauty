@@ -2,13 +2,49 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-            transition: all 0.3s;
+    transition: all 0.3s;
 }
 h1 {
-        color: #66C05D;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        letter-spacing: 0.1em;
+    color: #66C05D;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+}
+h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 30px;            
     }
+    h2 {
+        font-size: 40px;        
+    }
+    h3 {
+        font-size: 16px;        
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 20px; 
+        line-height: 21px;           
+    }
+    h2 {
+        font-size: 30px; 
+        line-height: 30px;       
+    }
+    h3 {
+        font-size: 14px; 
+        line-height: 16px;       
+    }
+}
