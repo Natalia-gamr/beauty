@@ -9,6 +9,10 @@ function openModal() {
     modal.style.display = 'flex';
 }
 
+let alert = document.createElement('div');
+alert.className = 'modal__success';
+alert.append('Спасибо, наш оператор свяжется с вами в ближайшее время!');
+
 function submitModal() {
     const form = document.querySelector('.modal__form');
 
@@ -21,16 +25,14 @@ function submitModal() {
         console.log(message);
     })
 
-    let alert = document.createElement('div');
-    alert.className = 'modal__success';
-    alert.append('Спасибо, наш оператор свяжется с вами в ближайшее время!');
+    
     form.append(alert)
     
     setTimeout(() => {
         closeModal();
         alert.remove();
         form.reset();
-    }, 5000);
+    }, 2000);
 }
 
 function subscribe() {
@@ -42,9 +44,11 @@ function subscribe() {
 
         console.log(email);
     })
+    subscribe.append(alert);
     setTimeout(() => {
+        alert.remove();
         subscribe.reset();
-    }, 3500); 
+    }, 1500); 
 }
 
 
