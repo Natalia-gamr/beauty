@@ -13,14 +13,14 @@ if (vw <= 800) {
     right.addEventListener('click', moveLeft);
     function moveLeft(){
         left.style.display = 'block';
-        slide[index].style.display = 'none'; // Скрываем текущий слайд
-        slide[++index].style.display = 'flex'; // Инкрементируем индекс и показываем следующий слайд
-        if (index === slide.length - 1) { // Убираем "правую" стрелку, если справа слайдов больше нет
+        slide[index].style.display = 'none'; 
+        slide[++index].style.display = 'flex'; 
+        if (index === slide.length - 1) { 
         right.style.display = 'none';
         }
     }
 
-    //Аналогично, только для левой стрелки
+
     left.addEventListener('click', moveRight);
     function moveRight(){
         right.style.display = 'block';
